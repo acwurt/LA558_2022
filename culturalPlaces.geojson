@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "traveler": "Anne Wurtenberger",
+        "place": "Carlsbad Caverns",
+        "month": "April"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.37991261482239,
+          32.17682933782179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "traveler": "Anne Wurtenberger",
+        "place": "Times Square",
+        "month": "June"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98826360702515,
+          40.75665241241919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "traveler": "Anne Wurtenberger",
+        "place": "Alcatraz",
+        "month": "April"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.42271423339842,
+          37.82659905787503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "traveler": "Anne Wurtenberger",
+        "place": "Apostle Islands",
+        "month": "june"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.69522857666016,
+          46.99313356770268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "traveler": "Anne Wurtenberger",
+        "place": "Mendenhall Glacier",
+        "month": "april"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.54509735107422,
+          58.48005541553066
+        ]
+      }
+    }
+  ]
+}
