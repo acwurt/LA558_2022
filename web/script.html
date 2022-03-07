@@ -1,18 +1,93 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>"Leaflet Maps"</title>
-<meta name="description" content="LA 458/558 Leaflet Maps - 2022" />
+console.clear();
 
-<style>
-html, body, 
+//var map = L.map('map').setView([42.2, -93], 7);
 
-#map { height: 500px; margin: 0; padding: 0; }
-
-
-url = "https://acwurt.github.io/LA558_2022/web/pop19.geojson"
+//CJS - I CHANGED THE ZOOM LEVEL TO BE 3
+var map = L.map('map').setView([42.2, -93], 3);
 
 
 
-  </body>
-</html>
+// add an OpenStreetMap tile layer
+var osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 18
+}).addTo(map);
+
+
+//set color of marker
+function getColor(d) {
+  //console.log(d); //CJS Added this to test if the value of yes or no was being sent by having it printed to the console. It was so I commeted the line off.
+  //CJS - the error here was that you need to replsace the single = with a double ==.
+  return d == "yes" ? "grey" :
+   d == "no" ? "red" :
+    "darkred";
+}
+
+
+//CJS - I CHANGE THE WORD ESTIMATE BELOW FOR THE FILL COLOR TO USE THE ATTRIBUTE FOR THE VISITED
+
+function style(feature) {
+  return {
+    //fillColor: getColor(feature.properties.estimate),
+    fillColor: getColor(feature.properties.visited),
+    weight: 1,
+    opacity: 1,
+    color: 'white',
+    dashArray: '8',
+    fillOpacity: 0.7
+  };
+}
+
+url = "https://raw.githubusercontent.com/ShivaAfshari/LA558-2022/main/Web/countyvisitedGeojson.geojson";
+
+
+//CJS- I AM CHANGING THE URL TO THE WEB SITE LINK
+url = "https://shivaafshari.github.io/LA558-2022/Web/countyvisitedGeojson.geojson";
+
+
+//CJS -you need to change the names fo the variables below.for example NAME in your data is STATE_NAME. estimate and moe could be two different vatiables. I would lalso recommend not exporrting the complete data set s a geojson, only the fields you actually need for your web maps to reduce file size.
+
+var geojsonLayer = new L.GeoJSON.AJAX(url, {
+  style: style,
+  onEachFeature: function(feature, layer) {
+    htmlText = "<strong>" + feature.properties.STATE_NAME + "</strong><br>" +
+      "???: " + feature.properties.FAMILIES + "<br>" +
+      "???: " + feature.properties.visited + "<br>";
+    layer.bindPopup(htmlText);
+    layer.bindTooltip(feature.properties.STATE_NAME);
+  }
+}).addTo(map);
+
+
+//Create Legend
+
+var legend = L.control({
+  position: 'bottomright'
+});
+//Possible values are 'topleft', 'topright', 'bottomleft' or 'bottomright'
+
+//CJS- THE GRADES NEED TO BE WRITTEN AS YES AND NO AS BELOW
+legend.onAdd = function(map) {
+  var legendDiv = L.DomUtil.create('legendDiv', 'info legend'),
+    grades = ['yes','no'],
+    labels = ['<strong>Estimate Count</strong><br>']
+
+
+
+  // loop through our density intervals and generate a label with a colored square for each interval
+  for (var i = 0; i < grades.length; i++) {
+    //legendDiv.innerHTML +=
+      //labels.push('<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+      //grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+'));
+    
+    //CJS - I replace the ablove three lines with the following. the main change is you have to tell it to not show numbers going from x - n  but you do want the break
+    legendDiv.innerHTML +=
+      labels.push('<i style="background:' + getColor(grades[i]) + '"></i> ' +
+      grades[i] + '<br>');
+  }
+  legendDiv.innerHTML = labels.join('');
+ 
+  return legendDiv;
+};
+
+legend.addTo(map);
