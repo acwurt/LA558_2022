@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>"acwurt - Leaflet"</title>
+<meta name="description" content="LA 558 Leaflet Maps- 2022" />
+
 // NEW MAP -----------------------------------------------------------------------
 
 <title="Anne Wurtenberger - Leaflet Map 2/n">	  
@@ -88,7 +94,7 @@ function style(feature) {
   };
 }
 
-url = "https://acwurt.github.io/LA558_2022/web/pop19.geojson";
+url = "https://acwurt.github.io/LA558_2022/web/stops.geojson";
 
 
 //CJS -you need to change the names fo the variables below.for example NAME in your data is STATE_NAME. estimate and moe could be two different vatiables. I would lalso recommend not exporrting the complete data set s a geojson, only the fields you actually need for your web maps to reduce file size.
@@ -96,38 +102,14 @@ url = "https://acwurt.github.io/LA558_2022/web/pop19.geojson";
 var geojsonLayer = new L.GeoJSON.AJAX(url, {
   style: style,
   onEachFeature: function(feature, layer) {
-    htmlText = "<strong>" + feature.properties.NAME + "</strong><br>" +
-      "Population Estimate: " + feature.properties.estimate + "<br>";
+    htmlText = "<strong>" + feature.properties.Name + "</strong><br>";
     layer.bindPopup(htmlText);
-    layer.bindTooltip(feature.properties.NAME);
+    layer.bindTooltip(feature.properties.Name);
   }
 }).addTo(map2);
 
 
 	
-//Create Legend
-
-var legend = L.control({
-  position: 'bottomright'
-});
-//Possible values are 'topleft', 'topright', 'bottomleft' or 'bottomright'
-
-legend.onAdd = function(map2) {
-  var legendDiv = L.DomUtil.create('legendDiv', 'info legend'),
-    grades = [0, 1000000, 2000000, 4000000, 7000000,10000000],
-    labels = ['<strong>Population Estimate</strong><br>'];
-
-
-
-  // loop through our density intervals and generate a label with a colored square for each interval
-  for (var i = 0; i < grades.length; i++) {
-    legendDiv.innerHTML +=
-      labels.push('<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-      grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+'));
-  }
-  legendDiv.innerHTML = labels.join('');
- 
-  return div;
-};
-
-legend.addTo(map2);
+</script>
+  </body>
+</html>
