@@ -1,0 +1,26 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Weston", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -94.9016298, 39.4111092 ] } },
+{ "type": "Feature", "properties": { "Name": "White Sands National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -106.3256816, 32.7872403 ] } },
+{ "type": "Feature", "properties": { "Name": "Zion National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -113.0263005, 37.2982022 ] } },
+{ "type": "Feature", "properties": { "Name": "Canyonlands National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -109.9025345, 38.2135733 ] } },
+{ "type": "Feature", "properties": { "Name": "Yellowstone National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -110.588455, 44.427963 ] } },
+{ "type": "Feature", "properties": { "Name": "Grand Teton National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -110.6817627, 43.7904282 ] } },
+{ "type": "Feature", "properties": { "Name": "Devils Tower", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -104.6985456, 44.5886461 ] } },
+{ "type": "Feature", "properties": { "Name": "Glacier National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -113.78702250000001, 48.7596128 ] } },
+{ "type": "Feature", "properties": { "Name": "Badlands National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -102.3396912, 43.8553804 ] } },
+{ "type": "Feature", "properties": { "Name": "Mount Rushmore National Memorial", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -103.4590667, 43.8791025 ] } },
+{ "type": "Feature", "properties": { "Name": "Wind Cave National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -103.4415644, 43.5724388 ] } },
+{ "type": "Feature", "properties": { "Name": "Grand Canyon", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -112.1124846, 36.0997631 ] } },
+{ "type": "Feature", "properties": { "Name": "Bryce Canyon National Park", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -112.1870895, 37.5930377 ] } },
+{ "type": "Feature", "properties": { "Name": "Great Sand Dunes National Park and Preserve", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -105.5930539, 37.7935263 ] } },
+{ "type": "Feature", "properties": { "Name": "Tallgrass Prairie National Preserve", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -96.5730004, 38.4426255 ] } },
+{ "type": "Feature", "properties": { "Name": "Sioux City", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -96.4049408, 42.4963416 ] } },
+{ "type": "Feature", "properties": { "Name": "Bonneville Salt Flats", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -113.8352043, 40.7787454 ] } },
+{ "type": "Feature", "properties": { "Name": "Capitol Reef Resort", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -111.382565, 38.320108 ] } },
+{ "type": "Feature", "properties": { "Name": "Under Canvas Mount Rushmore", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -103.417284, 43.8719864 ] } },
+{ "type": "Feature", "properties": { "Name": "Antelope Canyon", "descriptio": null }, "geometry": { "type": "Point", "coordinates": [ -111.3743302, 36.8619103 ] } }
+]
+}
