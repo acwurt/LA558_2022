@@ -77,11 +77,9 @@ function getColor(d) {
 }
 
 
-//CJS - I CHANGE THE WORD ESTIMATE BELOW FOR THE FILL COLOR TO USE THE ATTRIBUTE FOR THE VISITED
 
 function style(feature) {
   return {
-    //fillColor: getColor(feature.properties.estimate),
     fillColor: getColor(feature.properties.estimate),
     weight: 1,
     opacity: 1,
@@ -91,10 +89,6 @@ function style(feature) {
   };
 }
 
-url = "https://acwurt.github.io/LA558_2022/web/pop19.geojson";
-
-
-//CJS- I AM CHANGING THE URL TO THE WEB SITE LINK
 url = "https://acwurt.github.io/LA558_2022/web/pop19.geojson";
 
 
@@ -111,6 +105,7 @@ var geojsonLayer = new L.GeoJSON.AJAX(url, {
 }).addTo(map);
 
 
+	
 //Create Legend
 
 var legend = L.control({
@@ -121,7 +116,7 @@ var legend = L.control({
 legend.onAdd = function(map) {
   var legendDiv = L.DomUtil.create('legendDiv', 'info legend'),
     grades = [0, 1000000, 2000000, 4000000, 7000000,10000000],
-    labels = ['<strong>Percent Rural</strong><br>']
+    labels = [];
 
 
 
@@ -129,11 +124,11 @@ legend.onAdd = function(map) {
   for (var i = 0; i < grades.length; i++) {
     legendDiv.innerHTML +=
       labels.push('<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-      grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : ''));
+      grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+'));
   }
   legendDiv.innerHTML = labels.join('');
  
-  return legendDiv;
+  return div;
 };
 
 legend.addTo(map);
