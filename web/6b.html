@@ -4,6 +4,9 @@
     <title>"acwurt - Leaflet"</title>
 <meta name="description" content="LA 558 Leaflet Maps- 2022" />
 
+Anne Wurtenberger - Leaflet Map 1	  
+	  
+	  
 <style>
 html, body, 
 
@@ -134,64 +137,6 @@ legend.onAdd = function(map) {
 legend.addTo(map2);
 
 
-
-// NEW MAP FOR TRIP STOPS -----------------------------------------------------------------
-	
- console.clear();
-
-//var map = L.map('map').setView([42.2, -93], 7);
-
-//CJS - I CHANGED THE ZOOM LEVEL TO BE 3
-var map = L.map('map2').setView([42.2, -93], 3);
-
-
-
-// add an OpenStreetMap tile layer
-var osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
-  maxZoom: 18
-}).addTo(map2);
-
-
-//set color of marker
-function getColor(d) {
-  return d <= '1000000' ? "lightgrey" :
-    d <= '2000000' ? "aqua" :
-    d <= '4000000' ? "blue" :
-    d <= '7000000' ? "navy" :
-    d >= '10000000' ? "black" :
-    "#000"; //black
-}
-
-
-
-function style(feature) {
-  return {
-    fillColor: getColor(feature.properties.estimate),
-    weight: 1,
-    opacity: 1,
-    color: 'white',
-    dashArray: '8',
-    fillOpacity: 0.7
-  };
-}
-
-url = "https://acwurt.github.io/LA558_2022/web/stops.geojson";
-
-
-//CJS -you need to change the names fo the variables below.for example NAME in your data is STATE_NAME. estimate and moe could be two different vatiables. I would lalso recommend not exporrting the complete data set s a geojson, only the fields you actually need for your web maps to reduce file size.
-
-var geojsonLayer = new L.GeoJSON.AJAX(url, {
-  style: style,
-  onEachFeature: function(feature, layer) {
-    htmlText = "<strong>" + feature.properties.NAME + "</strong><br>" +
-      "Population Estimate: " + feature.properties.estimate + "<br>";
-    layer.bindPopup(htmlText);
-    layer.bindTooltip(feature.properties.NAME);
-  }
-}).addTo(map2);
-
-  
   
 </script>
   </body>
