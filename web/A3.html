@@ -1,94 +1,15 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>"acwurt - Leaflet"</title>
-<meta name="description" content="LA 558 Leaflet Maps- 2022" />
+    <title>"Something"</title>
+<meta name="description" content="LA 558  Shiva" />
 
-<h2> Anne Wurtenberger - Leaflet Map 2 </h2><br>	  
-	  
-	  
-<style>
-html, body, 
-
-#map { height: 500px; margin: 0; padding: 0; }
-
-
-.legend {
-    line-height: 10px;
-    color: #555;
-}
-.legend i {
-    width: 18px;
-    height: 20px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.9;
-}
-.info {
-    padding: 6px 8px;
-    font: 10px/20px Arial, Helvetica, sans-serif;
-    background: rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
-
-}
-.info h4 {
-    margin: 0 0 5px;
-    color: #777;
-}
-
-.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
-
-.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
-
-
-
-</style>
-
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-	  
-	<script src="https://profseeger.github.io/LVM-Code/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
-	  
   </head>
   <body>
-<div id="map"></div>
-<script>
-  console.clear();
+    <h2> Anne Wurtenberger | Assignment 3 | Tableau Maps </h2><br>
 
-var map = L.map('map').setView([40, -99], 4);
-
-// add an OpenStreetMap tile layer
-var osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
-  maxZoom: 18
-}).addTo(map);
-
-var icon = L.icon({
-    iconUrl: 'https://toppng.com/uploads/preview/map-point-google-map-marker-gif-11562858751s4qufnxuml.png',
-    iconSize: [27, 31],
-    iconAnchor: [13.5, 17.5],
-    popupAnchor: [0, -11]
-  });
-
-
-url = "https://acwurt.github.io/LA558_2022/web/stops.geojson";
-
-
-
-var geojsonLayer = new L.GeoJSON.AJAX(url, {
-    icon: icon,
-  onEachFeature: function(feature, layer) {
-    htmlText = "<strong>" + feature.properties.Name + "</strong><br>";
-    layer.bindPopup(htmlText);
-    layer.bindTooltip(feature.properties.Name);
-  }
-}).addTo(map);
-	
-
-	  
-</script>
+    
+    <div class='tableauPlaceholder' id='viz1647992528726' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16479925034660&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_16479925034660&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16479925034660&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1647992528726');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    
+    
   </body>
-
-<a href="https://acwurt.github.io/LA558_2022/web/A2">Link to Leaflet Map 1</a>
-
 </html>
