@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>"acwurt - Leaflet"</title>
+<meta name="description" content="LA 558 Leaflet Maps- 2022" />
+
+<h2> Anne Wurtenberger - Leaflet Map 2 </h2><br>	  
+	  
+	  
+<style>
+html, body, 
+
+#map { height: 500px; margin: 0; padding: 0; }
+
+
+.legend {
+    line-height: 10px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 20px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+}
+.info {
+    padding: 6px 8px;
+    font: 10px/20px Arial, Helvetica, sans-serif;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+
+
+
+</style>
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	  
+	<script src="https://profseeger.github.io/LVM-Code/classes/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+	  
+  </head>
+  <body>
+<div id="map"></div>
+<script>
+  console.clear();
+
+var map = L.map('map').setView([40, -99], 4);
+
+// add an OpenStreetMap tile layer
+var osm = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors',
+  maxZoom: 18
+}).addTo(map);
+
+var icon = L.icon({
+    iconUrl: 'https://toppng.com/uploads/preview/map-point-google-map-marker-gif-11562858751s4qufnxuml.png',
+    iconSize: [27, 31],
+    iconAnchor: [13.5, 17.5],
+    popupAnchor: [0, -11]
+  });
+
+
+url = "https://acwurt.github.io/LA558_2022/web/stops.geojson";
+
+
+
+var geojsonLayer = new L.GeoJSON.AJAX(url, {
+    icon: icon,
+  onEachFeature: function(feature, layer) {
+    htmlText = "<strong>" + feature.properties.Name + "</strong><br>";
+    layer.bindPopup(htmlText);
+    layer.bindTooltip(feature.properties.Name);
+  }
+}).addTo(map);
+	
+
+	  
+</script>
+  </body>
+
+<a href="https://acwurt.github.io/LA558_2022/web/A2">Link to Leaflet Map 1</a>
+
+</html>
