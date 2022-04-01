@@ -12,6 +12,9 @@ Assignments and Maps:
 <a href="https://acwurt.github.io/LA558_2022/web/A2">Assignment 2</a>
  
 <a href="https://acwurt.github.io/LA558_2022/web/A3">Assignment 3</a>
+
+<a href="https://acwurt.github.io/LA558_2022/web/A4">Assignment 4</a>
+
  
 Exercises:
   
