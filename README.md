@@ -5,7 +5,7 @@ I am a Senior in Community and Regional Planning with minors in GIS and Military
 
 
 -------------------------------------------------------------------------------------------
-Assignments and Maps:
+<b>Assignments and Maps:<b>
 
 <a href="https://acwurt.github.io/LA558_2022/web/A1">Assignment 1</a>
  
@@ -16,7 +16,7 @@ Assignments and Maps:
 <a href="https://acwurt.github.io/LA558_2022/web/A4">Assignment 4</a>
 
  
-Exercises:
+<b>Exercises:<b>
   
 <a href="https://acwurt.github.io/LA558_2022/web/ex2a">Excersise 2a</a>
  
