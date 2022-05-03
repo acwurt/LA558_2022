@@ -6,7 +6,12 @@ LA 558 Web Mapping and Spatial Data Visualization Course 2022
 
 
 -------------------------------------------------------------------------------------------
-<b>Assignments and Maps:<b>
+<b>FINAL PROJECT:<b>
+
+<a href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster</a>
+ 
+ 
+ <b>Assignments and Maps:<b>
 
 <a href="https://acwurt.github.io/LA558_2022/web/A1">Assignment 1</a>
  
