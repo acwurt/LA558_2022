@@ -1,4 +1,4 @@
-<b>LA 558 Web Mapping and Spatial Data Visualization Course 2022<b>
+<b>LA 558: Web Mapping and Spatial Data Visualization Course 2022<b>
 
 <b>Anne Wurtenberger's Site <b> 
 
