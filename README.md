@@ -7,7 +7,7 @@
 
 -------------------------------------------------------------------------------------------
 <strong>FINAL PROJECT:<b>
-
+<br>
  
 <a style="font-weight:bold" href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster </a>
 
