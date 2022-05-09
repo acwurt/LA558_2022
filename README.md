@@ -4,7 +4,9 @@
 
  <i>I am a Senior in Community and Regional Planning with minors in GIS and Military Studies.  <i>
 
-
+  <strong>NOTE:</strong>
+ <b>Thank you all for making this a great semester. I hope finals go well!<b>
+  
 -------------------------------------------------------------------------------------------
 <strong>FINAL PROJECT:<b>
 <br><br>
