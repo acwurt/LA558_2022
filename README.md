@@ -10,7 +10,8 @@
  <b>Thank you all for making this a great semester. I hope finals go well!<b>
   
 -------------------------------------------------------------------------------------------
-<strong>FINAL PROJECT:<b>
+<br>
+  <strong>FINAL PROJECT:<b>
 <br><br>
  
 <a style="font-weight:bold" href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster </a>
