@@ -1,6 +1,6 @@
-<h1>LA 558: Web Mapping and Spatial Data Visualization Course 2022<h1>
+<h1>LA 558: Web Mapping and Spatial Data Visualization Course 2022</h1>
 
-<h2>Anne Wurtenberger's Site <h2> 
+<h2>Anne Wurtenberger's Site </h2> 
 
  <i>I am a Senior in Community and Regional Planning with minors in GIS and Military Studies.  <i>
 
