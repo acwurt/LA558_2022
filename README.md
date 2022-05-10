@@ -11,9 +11,9 @@
 
  <i>I am a Senior in Community and Regional Planning with minors in GIS and Military Studies.  <i>
 
-  <br>
+ <br>
   
-  <strong>NOTE:</strong>
+ <strong>NOTE:</strong>
  <b>Thank you all for making this a great semester. I hope finals go well!<b>
   
 -------------------------------------------------------------------------------------------
@@ -39,14 +39,14 @@
  
  <a href="https://acwurt.github.io/LA558_2022/web/A3">Assignment 3</a>
 
-<a href="https://acwurt.github.io/LA558_2022/web/A4">Assignment 4</a>
+ <a href="https://acwurt.github.io/LA558_2022/web/A4">Assignment 4</a>
 
  <br>
   
-<h3>Exercises:</h3>
+ <h3>Exercises:</h3>
   
-<a href="https://acwurt.github.io/LA558_2022/web/ex2a">Excersise 2a</a>
+ <a href="https://acwurt.github.io/LA558_2022/web/ex2a">Excersise 2a</a>
  
-<a href="https://acwurt.github.io/LA558_2022/web/ex2b">Excersise 2b</a>
+ <a href="https://acwurt.github.io/LA558_2022/web/ex2b">Excersise 2b</a>
  
-<a href="https://acwurt.github.io/LA558_2022/web/ex3a">Excersise 3a</a>
+ <a href="https://acwurt.github.io/LA558_2022/web/ex3a">Excersise 3a</a>
