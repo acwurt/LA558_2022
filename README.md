@@ -10,7 +10,6 @@
  <b>Thank you all for making this a great semester. I hope finals go well!<b>
   
 -------------------------------------------------------------------------------------------
-<br>
   
 <h2>Projects and Assignemnts</h2>
 <br>
