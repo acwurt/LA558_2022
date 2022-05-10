@@ -1,5 +1,5 @@
 <header>
- <img src="2020-07-29-20-22-52 (2).jpg" alt="Anne">
+ <img src="2020-07-29-20-22-52 (2).jpg" alt="Anne" style="width:30px;height:30px;>
 
 </header>
  
