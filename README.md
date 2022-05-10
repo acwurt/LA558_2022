@@ -14,7 +14,7 @@
 <h2>Projects and Assignemnts</h2>
 <br>
 
-<strong>FINAL PROJECT:<b>
+<h3>FINAL PROJECT:</h3>
 <br><br>
  
 <a style="font-weight:bold" href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster </a>
@@ -26,7 +26,7 @@
 <br>
 <br> 
  
- <strong>Assignments and Maps:<strong>
+ <h3>Assignments and Maps:</h3>
 
 <a href="https://acwurt.github.io/LA558_2022/web/A1">Assignment 1</a>
  
