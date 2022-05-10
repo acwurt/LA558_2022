@@ -16,7 +16,7 @@
 
 <h3>FINAL PROJECT:</h3>
  
-<h4><a style="font-weight:bold" href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster</a></h4>
+<h4><a href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster</a></h4>
 
 <h4> Abstract. </h4>
 
@@ -36,7 +36,7 @@
 
  <br>
   
-<strong>Exercises:<strong>
+<h3>Exercises:</h3>
   
 <a href="https://acwurt.github.io/LA558_2022/web/ex2a">Excersise 2a</a>
  
