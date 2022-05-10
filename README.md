@@ -1,10 +1,3 @@
-<header>
- <img src="2020-07-29-20-22-52 (2).jpg" alt="Anne" style="width:100px;height:100px;">
-
-</header>
- 
-<section>
-
  <h1>LA 558: Web Mapping and Spatial Data Visualization Course 2022</h1>
 
  <h2>Anne Wurtenberger's Site </h2> 
