@@ -1,6 +1,8 @@
 <header>
- <img src=""C:\Users\acwur\Pictures\2020-07-29-20-22-52 (2).jpg"" alt="Logo">
+ <img src="C:\Users\acwur\Pictures\2020-07-29-20-22-52 (2).jpg" alt="Logo">
 
+</header>
+ 
 <section>
 
  <h1>LA 558: Web Mapping and Spatial Data Visualization Course 2022</h1>
