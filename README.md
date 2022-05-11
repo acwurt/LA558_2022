@@ -16,7 +16,7 @@
 
  <h3>FINAL PROJECT:</h3>
  
- <h4><a href="https://acwurt.github.io/LA558_2022/web/final">The 1986 Chernobyl Disaster</a></h4>
+ <h4><a href="https://storymaps.arcgis.com/stories/67d340b067304b5bbf6dfdc79b72ddc0">The 1986 Chernobyl Disaster</a></h4>
 
  <h4> Abstract. </h4>
 
